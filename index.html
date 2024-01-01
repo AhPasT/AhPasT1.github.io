@@ -6,58 +6,35 @@
     <title>祝何凝雨生日快乐呀</title>
 
     <style>
-        html,body {
-            margin: 0;
+        html, body {
+            margin: 0px;
             width: 100%;
             height: 100%;
             overflow: hidden;
             background: #000;
         }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 8888;
+        }
     </style>
 </head>
 <body>
-    <canvas id="canvas" style="position: absolute; width: 100%; height: 100%; z-index: 8888"></canvas>
-    <canvas style="position: absolute; width: 100%; height: 100%; z-index: 9999" class="canvas"></canvas>
-    <div class="overlay">
-        <div class="tabs">
-            <div class="tabs-labels"><span class="tabs-label">Commands</span><span class="tabs-label">Info</span><span class="tabs-label">Share</span></div>
-
-            <div class="tabs-panels">
-                <ul class="tabs-panel commands">
-                </ul>
-            </div>
-        </div>
-    </div>
+    <canvas id="canvas"></canvas>
 
     <!-- 添加音频元素 -->
-    <audio id="myAudio" loop>
+    <audio controls loop>
         <source src="https://drive.google.com/uc?export=download&id=1SLjpCwvxT1WjIps1YPcJHx530Lwgf84k" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
-    <!-- 添加播放按钮 -->
-    <button onclick="playAudio()">播放音乐</button>
-
     <script>
-        function playAudio() {
-            var audio = document.getElementById("myAudio");
-            audio.play();
-        }
+        // （这里插入前面给你提供的 JavaScript 代码）
     </script>
-
-    <script>
-        // 获取音频元素
-        var audio = document.getElementById("myAudio");
-
-        // 在页面加载后自动播放音频
-        document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(function() {
-                audio.play();
-            }, 1000); // 1秒后自动播放
-        });
-    </script>
-
-    <script src="js/index.js"></script>
 </body>
 </html>
 
