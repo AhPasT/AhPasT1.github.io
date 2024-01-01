@@ -7,7 +7,7 @@ var S = {
     S.Drawing.init('.canvas');
     document.body.classList.add('body--ready');
      var audio = document.createElement('audio');
-    audio.src = 'path/to/your/Josh Stewart - The Birthday Song.mp3';
+    audio.src = '1.mp3';
     audio.loop = true; // 如果需要循环播放
     audio.autoplay = true; // 如果需要自动播放
 
