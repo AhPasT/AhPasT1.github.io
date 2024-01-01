@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
 
     <style>
         html, body {
-            margin: 0px;
+            margin: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
@@ -19,7 +20,7 @@
             top: 20px;
             left: 20px;
             padding: 10px;
-            background-color: #3498db;
+            background-color: transparent; /* 将背景颜色设置为透明 */
             color: #fff;
             border: none;
             cursor: pointer;
@@ -40,15 +41,13 @@
         </div>
     </div>
 
- 
-<audio loop="loop" id="audios">
-    <source src="Josh Stewart - The Birthday Song.mp3" type="audio/mp3" />
-    <source src="Josh Stewart - The Birthday Song.ogg" type="audio/ogg" />
-    <!-- 添加其他格式的音频源 -->
-</audio>
+    <!-- 添加音频元素 -->
+    <audio loop="loop" id="audios">
+        <source src="Josh Stewart - The Birthday Song.mp3" type="audio/mp3" />
+    </audio>
 
     <!-- 播放按钮 -->
-    <button id="playButton">播放音乐</button>
+    <button id="playButton">PasT.</button>
 
     <script>
         // 获取音频元素
