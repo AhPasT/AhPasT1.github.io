@@ -6,18 +6,18 @@
     <title>祝何凝雨生日快乐呀</title>
 
     <style>
-        html,body{
-            margin:0px;
-            width:100%;
-            height:100%;
-            overflow:hidden;
-            background:#000;
+        html,body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
         }
     </style>
 </head>
 <body>
-    <canvas id="canvas" style="position:absolute;width:100%;height:100%;z-index:8888"></canvas>
-    <canvas style="position:absolute;width:100%;height:100%;z-index:9999" class="canvas"></canvas>
+    <canvas id="canvas" style="position: absolute; width: 100%; height: 100%; z-index: 8888"></canvas>
+    <canvas style="position: absolute; width: 100%; height: 100%; z-index: 9999" class="canvas"></canvas>
     <div class="overlay">
         <div class="tabs">
             <div class="tabs-labels"><span class="tabs-label">Commands</span><span class="tabs-label">Info</span><span class="tabs-label">Share</span></div>
@@ -35,20 +35,29 @@
         Your browser does not support the audio element.
     </audio>
 
+    <!-- 添加播放按钮 -->
+    <button onclick="playAudio()">播放音乐</button>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
+
     <script>
         // 获取音频元素
         var audio = document.getElementById("myAudio");
 
         // 在页面加载后自动播放音频
         document.addEventListener("DOMContentLoaded", function() {
-            audio.play();
+            setTimeout(function() {
+                audio.play();
+            }, 1000); // 1秒后自动播放
         });
-
-        // 如果希望在某个交互后播放，可以使用以下代码
-        // document.addEventListener("click", function() {
-        //     audio.play();
-        // });
     </script>
+
     <script src="js/index.js"></script>
 </body>
 </html>
+
