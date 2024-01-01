@@ -6,6 +6,13 @@ var S = {
 
     S.Drawing.init('.canvas');
     document.body.classList.add('body--ready');
+     var audio = document.createElement('audio');
+    audio.src = 'path/to/your/Josh Stewart - The Birthday Song.mp3';
+    audio.loop = true; // 如果需要循环播放
+    audio.autoplay = true; // 如果需要自动播放
+
+    // 将音乐元素添加到页面
+    document.body.appendChild(audio);
 
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
