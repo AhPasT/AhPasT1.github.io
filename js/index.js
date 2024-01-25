@@ -17,7 +17,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3|PasT.|Progress|autonomy|sanquinity|Transcendence|PasT.是一种生活态度|無限進步|🛆|#rectangle|');
+      S.UI.simulate('|#countdown 3|祝|何凝雨|生日快乐|天天美丽|天天开心|PasT.|#rectangle|');
     }
 
     S.Drawing.loop(function () {
